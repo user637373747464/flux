@@ -2,19 +2,24 @@
 """Flux — récupère les dernières vidéos des chaînes de channels.json
 et écrit videos.json (sans les Shorts).
 
-Aucune clé API : on utilise les flux RSS publics de YouTube.
+Deux modes :
+- avec la variable YOUTUBE_API_KEY : API officielle de YouTube (gratuite, fiable depuis GitHub) ;
+- sans clé : flux RSS publics (YouTube les refuse parfois aux serveurs).
 """
 
 import json
+import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+API = "https://www.googleapis.com/youtube/v3/"
 FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id={}"
 PLAYLIST_FEED = "https://www.youtube.com/feeds/videos.xml?playlist_id={}"
 KEEP_PER_CHANNEL = 15  # nombre de vidéos gardées par chaîne
@@ -35,15 +40,26 @@ NS = {
 
 # ---------- réseau ----------
 
+def _clean(url):
+    """Cache la clé d'API dans les messages d'erreur (les journaux GitHub sont publics)."""
+    return re.sub(r"key=[^&\s]+", "key=***", url)
+
+
 def fetch(url, timeout=20):
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return r.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
-        raise RuntimeError(f"HTTP {e.code} sur {url}") from None
+        detail = ""
+        try:
+            body = json.loads(e.read().decode("utf-8", "replace"))
+            detail = " — " + str(body["error"]["message"])[:150]
+        except Exception:
+            pass
+        raise RuntimeError(f"HTTP {e.code} sur {_clean(url)}{detail}") from None
     except Exception as e:
-        raise RuntimeError(f"{e} sur {url}") from None
+        raise RuntimeError(f"{e} sur {_clean(url)}") from None
 
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -72,7 +88,68 @@ def is_short(video_id):
         return None
 
 
-# ---------- analyse ----------
+# ---------- mode API (avec clé) ----------
+
+def api_get(endpoint, params, key, fetch_fn):
+    qs = urllib.parse.urlencode({**params, "key": key})
+    return json.loads(fetch_fn(f"{API}{endpoint}?{qs}"))
+
+
+def resolve_channel_api(entry, key, fetch_fn):
+    """Renvoie (identifiant UC..., nom) pour un @handle, une URL ou un identifiant."""
+    entry = entry.strip()
+    m = re.search(r"(UC[\w-]{22})", entry)
+    if m and ("channel/" in entry or entry.startswith("UC")):
+        params = {"part": "snippet", "id": m.group(1)}
+    else:
+        handle = entry.split("youtube.com/", 1)[1] if "youtube.com/" in entry else entry
+        handle = handle.split("/")[0].split("?")[0]
+        if not handle.startswith("@"):
+            handle = "@" + handle
+        params = {"part": "snippet", "forHandle": handle}
+    items = api_get("channels", params, key, fetch_fn).get("items") or []
+    if not items:
+        raise ValueError("chaîne introuvable : vérifie le @")
+    return items[0]["id"], items[0]["snippet"]["title"]
+
+
+def fetch_items_api(cid, key, fetch_fn):
+    """Dernières vidéos. Renvoie (liste, sans_shorts).
+
+    La liste « UULF » ne contient que les vidéos longues (pas de Shorts).
+    Si elle n'existe pas, on prend la liste de tous les envois (« UU »).
+    """
+    problems = []
+    for prefix in ("UULF", "UU"):
+        try:
+            data = api_get(
+                "playlistItems",
+                {
+                    "part": "snippet,contentDetails",
+                    "playlistId": prefix + cid[2:],
+                    "maxResults": KEEP_PER_CHANNEL,
+                },
+                key,
+                fetch_fn,
+            )
+        except Exception as ex:
+            problems.append(str(ex))
+            continue
+        items = []
+        for it in data.get("items", []):
+            vid = (it.get("contentDetails") or {}).get("videoId")
+            title = ((it.get("snippet") or {}).get("title") or "").strip()
+            if not vid or title in ("Private video", "Deleted video"):
+                continue
+            published = (it["contentDetails"].get("videoPublishedAt")
+                         or it["snippet"].get("publishedAt") or "")
+            items.append({"id": vid, "title": title,
+                          "published": published.replace("Z", "+00:00")})
+        return items, prefix == "UULF"
+    raise RuntimeError(" | ".join(problems))
+
+
+# ---------- mode RSS (sans clé) ----------
 
 ID_PATTERNS = (
     r'<link rel="canonical" href="https://www\.youtube\.com/channel/(UC[\w-]{22})"',
@@ -152,7 +229,9 @@ def load_json(path, default):
         return default
 
 
-def run(fetch_fn=fetch, short_fn=is_short, root=ROOT):
+def run(fetch_fn=fetch, short_fn=is_short, root=ROOT, key=None):
+    if key is None:
+        key = os.environ.get("YOUTUBE_API_KEY", "").strip()
     channels = load_json(root / "channels.json", {}).get("channels", [])
     out_path = root / "videos.json"
     prev = load_json(out_path, {})
@@ -166,9 +245,16 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT):
         stage = "identifiant"
         try:
             info = prev_channels.get(entry)
-            cid = info["id"] if info else resolve_channel(entry, fetch_fn)
-            stage = "flux"
-            name, items = fetch_items(cid, fetch_fn)
+            if key:
+                cid, name = (info["id"], info["name"]) if info else \
+                    resolve_channel_api(entry, key, fetch_fn)
+                stage = "vidéos"
+                items, long_only = fetch_items_api(cid, key, fetch_fn)
+            else:
+                cid = info["id"] if info else resolve_channel(entry, fetch_fn)
+                stage = "flux"
+                name, items = fetch_items(cid, fetch_fn)
+                long_only = False
         except Exception as ex:  # on garde l'ancien état de cette chaîne
             errors.append(f"{entry} [{stage}] : {ex}")
             old = prev_channels.get(entry)
@@ -185,7 +271,7 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT):
             old = prev_videos.get(it["id"])
             short = old.get("short") if old else None
             if short is None:
-                short = short_fn(it["id"])
+                short = False if long_only else short_fn(it["id"])
             videos[it["id"]] = {
                 "id": it["id"],
                 "title": it["title"],
@@ -210,8 +296,10 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT):
 
 
 def main():
+    mode = "API YouTube" if os.environ.get("YOUTUBE_API_KEY", "").strip() else "flux RSS (sans clé)"
     changed, errors, ok = run()
     total = len(load_json(ROOT / "channels.json", {}).get("channels", []))
+    print(f"Mode : {mode}")
     print(f"{ok} chaîne(s) sur {total} lue(s)")
     for e in errors:
         print("  ! " + e)
