@@ -16,6 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id={}"
+PLAYLIST_FEED = "https://www.youtube.com/feeds/videos.xml?playlist_id={}"
 KEEP_PER_CHANNEL = 15  # nombre de vidéos gardées par chaîne
 UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
@@ -36,8 +37,13 @@ NS = {
 
 def fetch(url, timeout=20):
     req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"HTTP {e.code} sur {url}") from None
+    except Exception as e:
+        raise RuntimeError(f"{e} sur {url}") from None
 
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -68,27 +74,40 @@ def is_short(video_id):
 
 # ---------- analyse ----------
 
+ID_PATTERNS = (
+    r'<link rel="canonical" href="https://www\.youtube\.com/channel/(UC[\w-]{22})"',
+    r'"externalId":"(UC[\w-]{22})"',
+    r'"channelId":"(UC[\w-]{22})"',
+)
+
+
 def resolve_channel(entry, fetch_fn):
-    """Accepte @handle, URL de chaîne ou identifiant UC... et renvoie l'identifiant UC..."""
+    """Accepte @handle, URL de chaîne ou identifiant UC... et renvoie l'identifiant UC...
+
+    Essaie le site normal puis le site mobile.
+    """
     entry = entry.strip()
     m = re.search(r"(UC[\w-]{22})", entry)
     if m and ("channel/" in entry or entry.startswith("UC")):
         return m.group(1)
     if "youtube.com/" in entry:
-        url = entry if entry.startswith("http") else "https://" + entry
+        path = entry.split("youtube.com/", 1)[1]
     else:
-        handle = entry if entry.startswith("@") else "@" + entry
-        url = f"https://www.youtube.com/{handle}"
-    html = fetch_fn(url)
-    for pat in (
-        r'<link rel="canonical" href="https://www\.youtube\.com/channel/(UC[\w-]{22})"',
-        r'"externalId":"(UC[\w-]{22})"',
-        r'"channelId":"(UC[\w-]{22})"',
-    ):
-        m = re.search(pat, html)
-        if m:
-            return m.group(1)
-    raise ValueError("chaîne introuvable")
+        path = entry if entry.startswith("@") else "@" + entry
+
+    problems = []
+    for host in ("https://www.youtube.com/", "https://m.youtube.com/"):
+        try:
+            html = fetch_fn(host + path)
+        except Exception as ex:
+            problems.append(str(ex))
+            continue
+        for pat in ID_PATTERNS:
+            m = re.search(pat, html)
+            if m:
+                return m.group(1)
+        problems.append(f"identifiant absent de {host}{path}")
+    raise ValueError(" | ".join(problems))
 
 
 def parse_feed(xml_text):
@@ -107,6 +126,21 @@ def parse_feed(xml_text):
             }
         )
     return name, items
+
+
+def fetch_items(cid, fetch_fn):
+    """Flux de la chaîne ; si YouTube refuse, flux de la liste « vidéos » de la chaîne."""
+    urls = [FEED_URL.format(cid)]
+    if cid.startswith("UC"):
+        urls.append(PLAYLIST_FEED.format("UULF" + cid[2:]))  # vidéos longues
+        urls.append(PLAYLIST_FEED.format("UU" + cid[2:]))    # tous les envois
+    problems = []
+    for url in urls:
+        try:
+            return parse_feed(fetch_fn(url))
+        except Exception as ex:
+            problems.append(str(ex))
+    raise RuntimeError(" | ".join(problems))
 
 
 # ---------- programme principal ----------
@@ -129,12 +163,14 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT):
     ok = 0
 
     for entry in channels:
+        stage = "identifiant"
         try:
             info = prev_channels.get(entry)
             cid = info["id"] if info else resolve_channel(entry, fetch_fn)
-            name, items = parse_feed(fetch_fn(FEED_URL.format(cid)))
+            stage = "flux"
+            name, items = fetch_items(cid, fetch_fn)
         except Exception as ex:  # on garde l'ancien état de cette chaîne
-            errors.append(f"{entry} : {ex}")
+            errors.append(f"{entry} [{stage}] : {ex}")
             old = prev_channels.get(entry)
             if old:
                 out_channels[entry] = old
@@ -164,7 +200,7 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT):
         "videos": sorted(videos.values(), key=lambda v: v["published"], reverse=True),
     }
     old_payload = {k: prev.get(k) for k in ("channels", "videos")}
-    changed = payload != old_payload
+    changed = ok > 0 and payload != old_payload  # si tout a échoué, on n'écrase rien
     if changed:
         payload["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         out_path.write_text(
@@ -175,10 +211,12 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT):
 
 def main():
     changed, errors, ok = run()
+    total = len(load_json(ROOT / "channels.json", {}).get("channels", []))
+    print(f"{ok} chaîne(s) sur {total} lue(s)")
     for e in errors:
-        print("  ! " + e, file=sys.stderr)
+        print("  ! " + e)
     print("videos.json mis à jour" if changed else "rien de nouveau")
-    return 1 if (ok == 0 and errors) else 0
+    return 1 if ok == 0 and total > 0 else 0
 
 
 if __name__ == "__main__":
