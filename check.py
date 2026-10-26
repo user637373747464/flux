@@ -2,11 +2,13 @@
 """Flux — récupère les dernières vidéos des chaînes de channels.json
 et écrit videos.json (sans les Shorts).
 
-Deux modes :
-- avec la variable YOUTUBE_API_KEY : API officielle de YouTube (gratuite, fiable depuis GitHub) ;
-- sans clé : flux RSS publics (YouTube les refuse parfois aux serveurs).
+Trois façons de lire une chaîne, essayées dans cet ordre :
+- si la variable YOUTUBE_API_KEY existe : l'API officielle de YouTube ;
+- sinon la page « Vidéos » de la chaîne (sans Shorts, aucune clé) ;
+- en dernier recours, les flux RSS (YouTube les refuse souvent aux serveurs).
 """
 
+import html as htmllib
 import json
 import os
 import re
@@ -15,7 +17,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -149,6 +151,81 @@ def fetch_items_api(cid, key, fetch_fn):
     raise RuntimeError(" | ".join(problems))
 
 
+# ---------- mode page « Vidéos » (sans clé) ----------
+
+AGO = re.compile(r"(\d+)\s+(second|minute|hour|day|week|month|year)s?\s+ago", re.I)
+UNIT_SECONDS = {"second": 1, "minute": 60, "hour": 3600, "day": 86400,
+                "week": 604800, "month": 2592000, "year": 31536000}
+
+
+def walk(node):
+    """Parcourt tous les dictionnaires d'un JSON imbriqué."""
+    if isinstance(node, dict):
+        yield node
+        for v in node.values():
+            yield from walk(v)
+    elif isinstance(node, list):
+        for v in node:
+            yield from walk(v)
+
+
+def extract_initial_data(page_html):
+    m = re.search(r"ytInitialData\s*=\s*", page_html)
+    if not m:
+        raise ValueError("données de la page introuvables (page inattendue)")
+    data, _ = json.JSONDecoder().raw_decode(page_html[m.end():])
+    return data
+
+
+def approx_date(text, now):
+    """« 3 days ago » -> date approximative (YouTube ne donne que ça sur cette page)."""
+    m = AGO.search(text or "")
+    if not m:
+        return None
+    return now - timedelta(seconds=int(m.group(1)) * UNIT_SECONDS[m.group(2).lower()])
+
+
+def videos_from_initial_data(data, now):
+    found, seen = [], set()
+    for node in walk(data):
+        vid = title = when = None
+        vr = node.get("videoRenderer")
+        lk = node.get("lockupViewModel")
+        if isinstance(vr, dict) and vr.get("videoId"):
+            vid = vr["videoId"]
+            t = vr.get("title") or {}
+            title = "".join(r.get("text", "") for r in t.get("runs", [])) or t.get("simpleText", "")
+            when = (vr.get("publishedTimeText") or {}).get("simpleText", "")
+        elif isinstance(lk, dict) and lk.get("contentType") == "LOCKUP_CONTENT_TYPE_VIDEO" \
+                and lk.get("contentId"):
+            vid = lk["contentId"]
+            meta = (lk.get("metadata") or {}).get("lockupMetadataViewModel") or {}
+            title = (meta.get("title") or {}).get("content", "")
+            texts = [n["content"] for n in walk(lk) if isinstance(n.get("content"), str)]
+            when = next((t for t in texts if AGO.search(t)), "")
+        if not vid or vid in seen:
+            continue
+        seen.add(vid)
+        found.append((vid, title.strip(), when))
+
+    items = []
+    for idx, (vid, title, when) in enumerate(found[:KEEP_PER_CHANNEL]):
+        dt = (approx_date(when, now) or now) - timedelta(seconds=idx)  # garde l'ordre de la page
+        items.append({"id": vid, "title": title,
+                      "published": dt.isoformat(timespec="seconds"), "approx": True})
+    return items
+
+
+def fetch_items_page(cid, fetch_fn, now):
+    page_html = fetch_fn(f"https://www.youtube.com/channel/{cid}/videos?hl=en")
+    m = re.search(r'<meta property="og:title" content="([^"]*)"', page_html)
+    name = htmllib.unescape(m.group(1)).strip() if m else ""
+    items = videos_from_initial_data(extract_initial_data(page_html), now)
+    if not items:
+        raise ValueError("aucune vidéo trouvée sur la page (vide ou format changé)")
+    return name, items
+
+
 # ---------- mode RSS (sans clé) ----------
 
 ID_PATTERNS = (
@@ -229,9 +306,43 @@ def load_json(path, default):
         return default
 
 
-def run(fetch_fn=fetch, short_fn=is_short, root=ROOT, key=None):
+def get_channel(entry, info, key, fetch_fn, now):
+    """Renvoie (id, nom, vidéos, sans_shorts, dates_approximatives)."""
+    if key:
+        try:
+            cid, name = (info["id"], info["name"]) if info else \
+                resolve_channel_api(entry, key, fetch_fn)
+        except Exception as ex:
+            raise RuntimeError(f"[identifiant] {ex}") from None
+        try:
+            items, long_only = fetch_items_api(cid, key, fetch_fn)
+        except Exception as ex:
+            raise RuntimeError(f"[vidéos] {ex}") from None
+        return cid, name, items, long_only, False
+
+    try:
+        cid = info["id"] if info else resolve_channel(entry, fetch_fn)
+    except Exception as ex:
+        raise RuntimeError(f"[identifiant] {ex}") from None
+
+    problems = []
+    try:
+        name, items = fetch_items_page(cid, fetch_fn, now)
+        return cid, name or (info or {}).get("name") or entry, items, True, True
+    except Exception as ex:
+        problems.append(f"page : {ex}")
+    try:
+        name, items = fetch_items(cid, fetch_fn)
+        return cid, name, items, False, False
+    except Exception as ex:
+        problems.append(f"flux : {ex}")
+    raise RuntimeError("[vidéos] " + " | ".join(problems))
+
+
+def run(fetch_fn=fetch, short_fn=is_short, root=ROOT, key=None, now=None):
     if key is None:
         key = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    now = now or datetime.now(timezone.utc)
     channels = load_json(root / "channels.json", {}).get("channels", [])
     out_path = root / "videos.json"
     prev = load_json(out_path, {})
@@ -242,21 +353,11 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT, key=None):
     ok = 0
 
     for entry in channels:
-        stage = "identifiant"
         try:
-            info = prev_channels.get(entry)
-            if key:
-                cid, name = (info["id"], info["name"]) if info else \
-                    resolve_channel_api(entry, key, fetch_fn)
-                stage = "vidéos"
-                items, long_only = fetch_items_api(cid, key, fetch_fn)
-            else:
-                cid = info["id"] if info else resolve_channel(entry, fetch_fn)
-                stage = "flux"
-                name, items = fetch_items(cid, fetch_fn)
-                long_only = False
+            cid, name, items, long_only, approx = get_channel(
+                entry, prev_channels.get(entry), key, fetch_fn, now)
         except Exception as ex:  # on garde l'ancien état de cette chaîne
-            errors.append(f"{entry} [{stage}] : {ex}")
+            errors.append(f"{entry} {ex}")
             old = prev_channels.get(entry)
             if old:
                 out_channels[entry] = old
@@ -272,12 +373,15 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT, key=None):
             short = old.get("short") if old else None
             if short is None:
                 short = False if long_only else short_fn(it["id"])
+            published = it["published"]
+            if approx and old:
+                published = old["published"]  # la date approximative ne bouge plus une fois enregistrée
             videos[it["id"]] = {
                 "id": it["id"],
                 "title": it["title"],
                 "channel": name or entry,
                 "channelId": cid,
-                "published": it["published"],
+                "published": published,
                 "short": short,
             }
 
@@ -288,7 +392,7 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT, key=None):
     old_payload = {k: prev.get(k) for k in ("channels", "videos")}
     changed = ok > 0 and payload != old_payload  # si tout a échoué, on n'écrase rien
     if changed:
-        payload["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        payload["updated"] = now.isoformat(timespec="seconds")
         out_path.write_text(
             json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
         )
@@ -296,7 +400,7 @@ def run(fetch_fn=fetch, short_fn=is_short, root=ROOT, key=None):
 
 
 def main():
-    mode = "API YouTube" if os.environ.get("YOUTUBE_API_KEY", "").strip() else "flux RSS (sans clé)"
+    mode = "API YouTube" if os.environ.get("YOUTUBE_API_KEY", "").strip() else "pages des chaînes (sans clé)"
     changed, errors, ok = run()
     total = len(load_json(ROOT / "channels.json", {}).get("channels", []))
     print(f"Mode : {mode}")
