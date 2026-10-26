@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Flux">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>Flux</title>
+<style>
+  :root {
+    --bg: #000; --fg: #fff; --mid: #8a8a8a; --dim: #4a4a4a; --line: #232323; --card: #0c0c0c;
+    --top: env(safe-area-inset-top); --bot: env(safe-area-inset-bottom);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  body { min-height: 100vh; padding-bottom: calc(var(--bot) + 32px); }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
+
+  header { position: sticky; top: 0; z-index: 5; background: rgba(0,0,0,.92);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    padding: calc(var(--top) + 14px) 16px 0; border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; justify-content: space-between; }
+  h1 { margin: 0; font-size: 22px; letter-spacing: .32em; font-weight: 600; }
+  .icons { display: flex; gap: 18px; }
+  .icons button { font-size: 20px; color: var(--mid); }
+  .icons button:active { color: var(--fg); }
+  .tabs { display: flex; gap: 22px; margin-top: 12px; }
+  .tab { padding: 8px 0 10px; color: var(--mid); font-size: 15px; border-bottom: 2px solid transparent; }
+  .tab.on { color: var(--fg); border-bottom-color: var(--fg); }
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0 12px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px;
+    font-size: 13px; color: var(--mid); white-space: nowrap; }
+  .chip.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+  main { padding: 16px; max-width: 640px; margin: 0 auto; }
+  .card { display: block; width: 100%; text-align: left; margin-bottom: 22px; }
+  .thumb { position: relative; aspect-ratio: 16 / 9; background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; overflow: hidden; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .meta { display: flex; gap: 10px; margin-top: 10px; align-items: flex-start; }
+  .dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--fg); margin-top: 7px; }
+  .card.seen .dot { background: transparent; border: 1px solid var(--dim); }
+  .card.seen .title { color: var(--mid); font-weight: 400; }
+  .title { font-weight: 600; font-size: 16px; line-height: 1.3; }
+  .sub { color: var(--mid); font-size: 13px; margin-top: 3px; }
+
+  .empty { text-align: center; color: var(--mid); padding: 64px 16px; line-height: 1.6; }
+  .empty b { color: var(--fg); display: block; font-size: 18px; margin-bottom: 8px; font-weight: 600; }
+  .stamp { text-align: center; color: var(--dim); font-size: 12px; margin-top: 8px; }
+
+  #player { position: fixed; inset: 0; z-index: 20; background: var(--bg); display: none; flex-direction: column;
+    padding: calc(var(--top) + 8px) 0 calc(var(--bot) + 12px); overflow-y: auto; }
+  #player.open { display: flex; }
+  .ptop { display: flex; align-items: center; padding: 6px 16px 12px; }
+  .back { font-size: 15px; color: var(--mid); padding: 6px 0; }
+  .frame { width: 100%; aspect-ratio: 16 / 9; background: #000; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .pinfo { padding: 16px; max-width: 640px; }
+  .pinfo .title { font-size: 18px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <h1>FLUX</h1>
+    <div class="icons">
+      <button id="allseen" title="Tout marquer comme vu" aria-label="Tout marquer comme vu">✓</button>
+      <button id="refresh" title="Actualiser" aria-label="Actualiser">↻</button>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tab on" data-view="new">Nouvelles</button>
+    <button class="tab" data-view="all">Tout</button>
+  </div>
+  <div class="chips" id="chips"></div>
+</header>
+
+<main>
+  <div id="list"></div>
+  <div class="stamp" id="stamp"></div>
+</main>
+
+<section id="player" aria-hidden="true">
+  <div class="ptop"><button class="back" id="close">← Retour</button></div>
+  <div class="frame" id="frame"></div>
+  <div class="pinfo">
+    <div class="title" id="ptitle"></div>
+    <div class="sub" id="psub"></div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const SEEN_KEY = 'flux_seen_v1';
+  const NEW_DAYS = 14;
+
+  let data = { videos: [], channels: {}, updated: null };
+  let view = 'new';
+  let channelFilter = null;
+  let seen = new Set();
+  let firstRun = false;
+
+  try {
+    const raw = localStorage.getItem(SEEN_KEY);
+    if (raw === null) firstRun = true; else seen = new Set(JSON.parse(raw));
+  } catch (e) { /* stockage indisponible : tout apparaît comme nouveau */ }
+
+  function saveSeen() {
+    try { localStorage.setItem(SEEN_KEY, JSON.stringify([...seen])); } catch (e) {}
+  }
+
+  function ago(iso) {
+    const s = (Date.now() - Date.parse(iso)) / 1000;
+    if (!(s >= 0)) return '';
+    if (s < 3600) return `il y a ${Math.max(1, Math.round(s / 60))} min`;
+    if (s < 86400) return `il y a ${Math.round(s / 3600)} h`;
+    const d = Math.round(s / 86400);
+    if (d === 1) return 'hier';
+    if (d < 30) return `il y a ${d} j`;
+    return `il y a ${Math.round(d / 30)} mois`;
+  }
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  function visible() {
+    let v = data.videos.filter((x) => !x.short);
+    if (channelFilter) v = v.filter((x) => x.channelId === channelFilter);
+    if (view === 'new') {
+      v = v.filter((x) => !seen.has(x.id) && Date.now() - Date.parse(x.published) < NEW_DAYS * 864e5);
+    }
+    return v;
+  }
+
+  function renderChips() {
+    const box = $('#chips');
+    box.textContent = '';
+    const all = el('button', 'chip' + (channelFilter ? '' : ' on'), 'Toutes');
+    all.onclick = () => { channelFilter = null; render(); };
+    box.append(all);
+    Object.values(data.channels).forEach((c) => {
+      const b = el('button', 'chip' + (channelFilter === c.id ? ' on' : ''), c.name);
+      b.onclick = () => { channelFilter = channelFilter === c.id ? null : c.id; render(); };
+      box.append(b);
+    });
+  }
+
+  function render() {
+    renderChips();
+    document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', t.dataset.view === view));
+
+    const list = $('#list');
+    list.textContent = '';
+    const vids = visible();
+
+    if (!data.videos.length) {
+      const e = el('div', 'empty');
+      e.append(el('b', '', 'Aucune vidéo pour l’instant'));
+      e.append(document.createTextNode('Le vérificateur n’a pas encore tourné. Sur GitHub : Actions → « Vérifier les vidéos » → Run workflow.'));
+      list.append(e);
+    } else if (!vids.length) {
+      const e = el('div', 'empty');
+      e.append(el('b', '', view === 'new' ? 'Tout est vu' : 'Rien ici'));
+      e.append(document.createTextNode(view === 'new' ? 'Aucune nouvelle vidéo pour le moment.' : 'Aucune vidéo pour ce filtre.'));
+      list.append(e);
+    }
+
+    vids.forEach((v) => {
+      const card = el('button', 'card' + (seen.has(v.id) ? ' seen' : ''));
+      const th = el('div', 'thumb');
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      img.alt = '';
+      img.src = `https://i.ytimg.com/vi/${v.id}/mqdefault.jpg`;
+      th.append(img);
+      const meta = el('div', 'meta');
+      meta.append(el('span', 'dot'));
+      const txt = el('div');
+      txt.append(el('div', 'title', v.title));
+      txt.append(el('div', 'sub', `${v.channel} · ${ago(v.published)}`));
+      meta.append(txt);
+      card.append(th, meta);
+      card.onclick = () => openPlayer(v);
+      list.append(card);
+    });
+
+    $('#stamp').textContent = data.updated ? `Mis à jour ${ago(data.updated)}` : '';
+  }
+
+  function openPlayer(v) {
+    seen.add(v.id);
+    saveSeen();
+    $('#ptitle').textContent = v.title;
+    $('#psub').textContent = `${v.channel} · ${ago(v.published)}`;
+    const f = document.createElement('iframe');
+    f.src = `https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&playsinline=1&rel=0&modestbranding=1`;
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    f.referrerPolicy = 'strict-origin-when-cross-origin';
+    $('#frame').textContent = '';
+    $('#frame').append(f);
+    $('#player').classList.add('open');
+    $('#player').setAttribute('aria-hidden', 'false');
+    history.pushState({ player: true }, '');
+  }
+
+  function closePlayer() {
+    $('#frame').textContent = '';
+    $('#player').classList.remove('open');
+    $('#player').setAttribute('aria-hidden', 'true');
+    render();
+  }
+
+  $('#close').onclick = () => history.back();
+  window.addEventListener('popstate', () => {
+    if ($('#player').classList.contains('open')) closePlayer();
+  });
+
+  document.querySelectorAll('.tab').forEach((t) => {
+    t.onclick = () => { view = t.dataset.view; render(); };
+  });
+
+  $('#allseen').onclick = () => {
+    data.videos.forEach((v) => seen.add(v.id));
+    saveSeen();
+    render();
+  };
+
+  async function load() {
+    try {
+      const res = await fetch('videos.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error(res.status);
+      data = await res.json();
+      if (firstRun) {
+        // Premier lancement : les vidéos déjà sorties comptent comme vues.
+        data.videos.forEach((v) => seen.add(v.id));
+        saveSeen();
+        firstRun = false;
+      } else if (data.videos.length) {
+        const ids = new Set(data.videos.map((v) => v.id));
+        seen = new Set([...seen].filter((id) => ids.has(id)));
+        saveSeen();
+      }
+    } catch (e) { /* hors ligne ou pas encore de fichier : on garde ce qu'on a */ }
+    render();
+  }
+
+  $('#refresh').onclick = load;
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  load();
+})();
+</script>
+</body>
+</html>
