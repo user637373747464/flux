@@ -1,0 +1,33 @@
+name: Vérifier les vidéos
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: flux-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Récupérer les nouvelles vidéos
+        run: python check.py
+
+      - name: Enregistrer si quelque chose a changé
+        run: |
+          git config user.name "flux-bot"
+          git config user.email "flux-bot@users.noreply.github.com"
+          git add videos.json
+          git diff --cached --quiet || (git commit -m "maj vidéos" && git push)
