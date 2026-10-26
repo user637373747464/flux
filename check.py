@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent
 API = "https://www.googleapis.com/youtube/v3/"
 FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id={}"
 PLAYLIST_FEED = "https://www.youtube.com/feeds/videos.xml?playlist_id={}"
-KEEP_PER_CHANNEL = 15  # nombre de vidéos gardées par chaîne
+KEEP_PER_CHANNEL = 30  # nombre de vidéos gardées par chaîne
 UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
     "(KHTML, like Gecko) Version/17.0 Safari/605.1.15"
