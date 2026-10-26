@@ -43,6 +43,958 @@
  },
  "videos": [
   {
+   "id": "PyCid-1nc7o",
+   "title": "L'Empreinte de Dieu",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "GpJXKEcJ0SM",
+   "title": "L'étrange paradoxe qui contrôle votre vie",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "d_WjOBeLVn0",
+   "title": "FAKER [EP. 1] : The rise of a League of Legends genius.",
+   "channel": "EGO",
+   "channelId": "UCxH16958KSxT4Z9yL_9JYtw",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "S7nItP_RUoY",
+   "title": "You Can't Stay in a Relationship and We're Going to Change That",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "30Wn_cbJPKw",
+   "title": "Why You Should NEVER Win the Lottery",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "8EnSVKTX5OA",
+   "title": "Physics confirms it: time is a fiction",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "7rT6oKdEI6E",
+   "title": "L'iceberg des objets cosmiques expliqué",
+   "channel": "Sol",
+   "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "m2nUbMZwFrA",
+   "title": "262FINAL",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "x_oa3PgnVfA",
+   "title": "30 Days to Regain Control of Your Brain",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "VMAC8We2kKY",
+   "title": "The Habits That PREVENT Manipulation | Liar Game Analysis",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:19+00:00",
+   "short": false
+  },
+  {
+   "id": "AhpJilx9mxQ",
+   "title": "Pourquoi la souffrance ouvre les yeux ?",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "HaHiCGOPDeE",
+   "title": "Le désastre derrière Google Earth",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "HWTLM_lmUBU",
+   "title": "This Phenomenon Is Destroying Modern Man",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "O1T3So69zMA",
+   "title": "The Perfect Villain: Anakin Skywalker",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "Oae8h_5qTeY",
+   "title": "The CRAZY PLAN to CONTROL EARTH across the GALAXY",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "tJPmY7wyXLk",
+   "title": "VFINAL",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "jDs-2vSwZVw",
+   "title": "Participate in your first Memory Competition (for beginners!)",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "TI97KW8rorw",
+   "title": "How to ANALYZE Like Oreki Houtarou | Hyouka Analysis",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:18+00:00",
+   "short": false
+  },
+  {
+   "id": "lRhSjkMg8R8",
+   "title": "La nostalgie d'un monde qui n'a jamais existé",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "YkE0B9BEDtw",
+   "title": "L'algorithme qui contrôle vos musiques",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "RpVJVUGfu1Q",
+   "title": "He Dominated the World Starting From Zero (and how you can too)",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "HdZVZLbwrvw",
+   "title": "The Paradox of Infinite Money",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "t5cAMdBB7-M",
+   "title": "Can we BUILD a WORLD-SHIP?",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "TWEs6HNHEQs",
+   "title": "When you embrace chaos, you become unstoppable",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "nc3bWVwEYRA",
+   "title": "When do you become \"too old\" to learn?",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "HC6TIipHaMs",
+   "title": "What OUTSMARTING Someone Actually Looks Like | The Dominion | POWER IQ",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:17+00:00",
+   "short": false
+  },
+  {
+   "id": "aqz_iw7svxM",
+   "title": "La théorie de la boîte",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "vG3OEohSjgs",
+   "title": "How Call of Duty cheats its players",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "n-CxCS4WQNg",
+   "title": "What if you started all over again from scratch?",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "zPYZXDuP7zQ",
+   "title": "The Perfect Villain: Stephen from Django Unchained",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "0hFygtWZG6w",
+   "title": "We Were Wrong About the REAL COST of NUCLEAR ENERGY (and it’s crucial for the climate)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "mjTH6PDe4dQ",
+   "title": "When you understand this, everything changes.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "rfcG74s14l8",
+   "title": "Why AI will NEVER replace your brain",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "mtvfjROVr_Q",
+   "title": "The Trap-Setting Genius of Akiyama Shinichi (Liar Game Round 1 Analysis)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:16+00:00",
+   "short": false
+  },
+  {
+   "id": "SXAcXULIAvQ",
+   "title": "La solitude, ma plus fidèle amie",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "bC7OBigMsHE",
+   "title": "Destroy the ultimate creation game",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "SE55b7XQK8c",
+   "title": "You're not lost. You're just doubting.",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "7X1zAAX8FEY",
+   "title": "Your Age Says Everything About You",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "HtfUGUXvtTo",
+   "title": "The plan to destroy the internet has already begun (and it's terrifying).",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "B_jcoxVNITA",
+   "title": "Treat Business Like a Video Game and Become Free",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "wfOx9Jzwf9I",
+   "title": "How to enter THE FLOW? (The ULTIMATE state of focus)",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "rVY2s1ZZWTw",
+   "title": "How to STRATEGIZE Like Napoleon Bonaparte (Crossing the Alps Analysis)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:15+00:00",
+   "short": false
+  },
+  {
+   "id": "DdBz-Mu1nis",
+   "title": "L'opportunité du chaos",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "AslGTHi8guU",
+   "title": "The Greatest Mystery in SPEEDRUN History",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "AHw6eEV9fcY",
+   "title": "The FORGOTTEN method to make everyone respect you",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "b-3UFZzPR_M",
+   "title": "The Movie That Lies to Its Audience",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "wrWOPhiEFEQ",
+   "title": "Why the POLES will FLIP (and what it means for YOU)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "URRq9Jv3ieg",
+   "title": "You already know what you should be doing.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "B0ah-4f9qe0",
+   "title": "La vérité sur les Pilules pour le Cerveau (\"Smart drugs\")",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "huKC0ZY6L_s",
+   "title": "How to Outsmart EVERYONE Like Dr. Frost (Nambong Baek Analysis)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:14+00:00",
+   "short": false
+  },
+  {
+   "id": "tnXKZkHFMEM",
+   "title": "Plus on est conscient, plus on est désespéré ?",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "97U92jQsXVw",
+   "title": "STAR CITIZEN has just accomplished the impossible",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "QF9oVrNzcKQ",
+   "title": "Why do you feel like you're just enduring your life?",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "aSITVezTlJY",
+   "title": "Why Does Everyone Think They're Special?",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "gm5orDgt3YE",
+   "title": "Why Galaxies Are Flat (and What It Hides)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "eR6fy9UsU9o",
+   "title": "200 seconds to convince you to put down your phone.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "BB0cXAn-v-s",
+   "title": "Your memory isn't the problem...",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "RgPxnHv84h4",
+   "title": "How to Train Like Daniel Park and TRANSFORM (Full Lookism Guide)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:13+00:00",
+   "short": false
+  },
+  {
+   "id": "t_BEWFYN7l4",
+   "title": "Détruire son identité",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "tw7qZX-ZucQ",
+   "title": "Pourquoi les JEUX-VIDEO prennent trop de place ?",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "wKzqt8_w-_M",
+   "title": "How to Pass Your Finals Without Studying Too Much (For Real)",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "oR7QtAfNFVQ",
+   "title": "The Most Perfect Villain: Walter White from Breaking Bad",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "F85fEBVWvzI",
+   "title": "We were wrong about the Big Bang (James Webb relaunches EVERYTHING)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "1oZGyaNgn-U",
+   "title": "Your Life Operates in Seasons, Choose Yours",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "ZChiC6IVBlc",
+   "title": "Le Guide ULTIME du Palais de Mémoire",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "rU8dXw-zbjQ",
+   "title": "Fight Like A WEAPON Using Taekwondo (Seong Taehun Guide)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:12+00:00",
+   "short": false
+  },
+  {
+   "id": "7gljfQuziVo",
+   "title": "Qui choisirez-vous de tuer ?",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "aTHBiikfank",
+   "title": "THE INCREDIBLE way MINECRAFT works",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "2Gf4E-M2kRo",
+   "title": "What Video Games Say About You",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "TS8MkBMoK2M",
+   "title": "The Movie That Goes Way Too Far",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "6loO1gjxHTw",
+   "title": "Le JOUR où NOUS N’AVIONS AUCUNE CHANCE (Chelyabinsk, 2013)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "pkaSgtOGPg0",
+   "title": "Casse-toi la gueule",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "IUPhxsv4-eU",
+   "title": "Comment Devenir ACCRO aux Etudes ? (La vidéo la plus importante de ta vie)",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "G1xMJcsZ8dM",
+   "title": "How to Get to Hobin Yoo's Level In a Year (Viral Hit Guide)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:11+00:00",
+   "short": false
+  },
+  {
+   "id": "AVzkp95T8NQ",
+   "title": "Se libérer de son fardeau",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "Knpz8pu42iw",
+   "title": "Why are racing games slow?",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "lhLICrV6DbY",
+   "title": "Why do toxic people have more friends than you?",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "yae4NU_uFs4",
+   "title": "The Most Perfect Villain: Tai Lung from Kung Fu Panda",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "9hXNoTlvrPc",
+   "title": "The NIGHT is NOT BLACK: the cosmological PROOF",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "9SjivlOL3NI",
+   "title": "When You Ignore Reality, You Get Everything You Want",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "vwYv6u-2-lY",
+   "title": "How to REPROGRAM your BRAIN?",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "QZvdZySyDss",
+   "title": "Get SHREDDED Like Daniel Park (Lookism Calisthenics Guide)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:10+00:00",
+   "short": false
+  },
+  {
+   "id": "x0pN_VMFsII",
+   "title": "Le silence de la haine",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "5tQlMwutAkE",
+   "title": "THE GAME that revolutionized ALL VIDEO GAMES",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "_jkK6RpOqqQ",
+   "title": "If you feel empty, watch this video.",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "Fq6YWqxxaSU",
+   "title": "Pourquoi On Se Sent Vide ?",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "AEPGUMSe8G4",
+   "title": "The GREAT ATTRACTOR: INVISIBLE Architecture that sweeps us away",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "Gjgtgk8z4SQ",
+   "title": "Go Get More.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "fOGKzYvuQ_o",
+   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "sM57wXXt8fA",
+   "title": "Chainsaw Man Is Not A Gooner Anime (Denji Analysis)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:09+00:00",
+   "short": false
+  },
+  {
+   "id": "nlkHpqZt3sI",
+   "title": "S'endetter pour être admiré",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "yOhv0UhR8hs",
+   "title": "You don't like video games anymore",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "BLgEyB2E5G8",
+   "title": "If you want to succeed, you absolutely MUST do this!",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "MznosFR7Gx8",
+   "title": "Le Problème de Michael Scott - The Office",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "iuomcXona2w",
+   "title": "The PROOF that your DECISIONS are MANIPULATED (from Pavlov to AI)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "bnk1Qhksppk",
+   "title": "Why You Need to Be Obsessed in Your Twenties",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "_GT84ntTfSc",
+   "title": "Here are 4 UNKNOWN Methods to Memorize What You Read",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "CNPe70xI95g",
+   "title": "Denji's Fatal Flaw Costs Him Everything",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:08+00:00",
+   "short": false
+  },
+  {
+   "id": "mQlDoNeqLuI",
+   "title": "Les pires souffrances",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:07+00:00",
+   "short": false
+  },
+  {
+   "id": "aePcHOUFDC4",
+   "title": "Become so strong that they all want to be like you.",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:07+00:00",
+   "short": false
+  },
+  {
+   "id": "fu_BpbVwoOc",
+   "title": "The Perfect Villain: Hans Landa",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:07+00:00",
+   "short": false
+  },
+  {
+   "id": "3IJOM3Wv2cc",
+   "title": "PROOF that AI is NO LONGER a TOOL: it's an AUTONOMOUS AGENT",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:07+00:00",
+   "short": false
+  },
+  {
+   "id": "nDVhALw-0z4",
+   "title": "The power of taking risks.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:07+00:00",
+   "short": false
+  },
+  {
+   "id": "fXg0P_0UzIo",
+   "title": "How to memorize EVERYTHING EASILY?",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:07+00:00",
+   "short": false
+  },
+  {
+   "id": "wIULeG7Ta7Q",
+   "title": "Fight Like A MONSTER Using Aikido (Hayato Suo Guide)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:07+00:00",
+   "short": false
+  },
+  {
+   "id": "USq0Fcdvy44",
+   "title": "Se méfier des compliments de nos amis",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:06+00:00",
+   "short": false
+  },
+  {
+   "id": "A4YEapboc1A",
+   "title": "Is the French school system the worst in the world?",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:06+00:00",
+   "short": false
+  },
+  {
+   "id": "rDkIjpYsDuY",
+   "title": "The Sneaky Signs You're Pushing People Away",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:06+00:00",
+   "short": false
+  },
+  {
+   "id": "2O4PWc7gjm8",
+   "title": "Why WE will NEVER know EVERYTHING (Gödel proved it)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:06+00:00",
+   "short": false
+  },
+  {
+   "id": "H5RhV3AQtDA",
+   "title": "The Only Way to Become Who You Want to Be",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:06+00:00",
+   "short": false
+  },
+  {
+   "id": "oj-B70ykIQ4",
+   "title": "Here are the WORST POPULAR productivity tips (stop following them!)",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:06+00:00",
+   "short": false
+  },
+  {
+   "id": "IwFBXPJDSGk",
+   "title": "Use Hobin Yoo's Isolation Protocol To Come Back OP (Viral Hit Guide)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:06+00:00",
+   "short": false
+  },
+  {
+   "id": "4PADGm75Voo",
+   "title": "Cette fleur humilie toutes les philosophies",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-10-26T09:59:05+00:00",
+   "short": false
+  },
+  {
+   "id": "ugt2oU8p3O8",
+   "title": "If you're a teenager, this video will change your life.",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-10-26T09:59:05+00:00",
+   "short": false
+  },
+  {
+   "id": "f0T76RPlcAE",
+   "title": "The Effect That Makes You Want to Know",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-10-26T09:59:05+00:00",
+   "short": false
+  },
+  {
+   "id": "qFWVhun3z9E",
+   "title": "Why talking to an alien is (almost) impossible",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-26T09:59:05+00:00",
+   "short": false
+  },
+  {
+   "id": "TeAlTu1BBGI",
+   "title": "Reprogram YOUR brain for success in 258 seconds.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-26T09:59:05+00:00",
+   "short": false
+  },
+  {
+   "id": "mBT0cxPqnIE",
+   "title": "30 ans de recherche sur le Sommeil résumée en 13 minutes",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-26T09:59:05+00:00",
+   "short": false
+  },
+  {
+   "id": "u-OCph4o2ik",
+   "title": "Learn To Fight In A Month Like Hobin Yoo (Viral Hit Guide)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-10-26T09:59:05+00:00",
+   "short": false
+  },
+  {
    "id": "NU2L4gZhtro",
    "title": "Fabriquer un Dieu en 20 minutes",
    "channel": "Lacrimosophia",
@@ -156,7 +1108,7 @@
   },
   {
    "id": "vUYawPt28Ws",
-   "title": "The Art of Being a Good Person: Avatar's Zuko",
+   "title": "Why Zuko is the best character in Avatar",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
    "published": "2026-10-26T04:09:32+00:00",
@@ -396,7 +1348,7 @@
   },
   {
    "id": "AZlmqO3vjFo",
-   "title": "The Art of Being a Good Person: Jaime Lannister",
+   "title": "Why Jaime Lannister is the best character in Game of Thrones",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
    "published": "2026-10-26T04:09:29+00:00",
@@ -1243,5 +2195,5 @@
    "short": false
   }
  ],
- "updated": "2026-10-26T04:09:33+00:00"
+ "updated": "2026-10-26T09:59:34+00:00"
 }
