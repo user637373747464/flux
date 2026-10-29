@@ -43,6 +43,22 @@
  },
  "videos": [
   {
+   "id": "yW9vi5QTq3k",
+   "title": "Burn Your Plan B",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-29T18:22:21+00:00",
+   "short": false
+  },
+  {
+   "id": "4ytaQw6vPus",
+   "title": "Give me 8 minutes and you’ll remember anything",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-10-29T18:22:21+00:00",
+   "short": false
+  },
+  {
    "id": "PyCid-1nc7o",
    "title": "L'Empreinte de Dieu",
    "channel": "Lacrimosophia",
@@ -460,7 +476,7 @@
   },
   {
    "id": "QF9oVrNzcKQ",
-   "title": "Pourquoi T'as l'impression de Subir ta vie ?",
+   "title": "Why do you feel like you're just enduring your life?",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:13+00:00",
@@ -748,7 +764,7 @@
   },
   {
    "id": "fOGKzYvuQ_o",
-   "title": "Voici les PIRES conseils POPULAIRES de développement personnel (PARTIE 2)",
+   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-10-26T09:59:09+00:00",
@@ -967,22 +983,6 @@
    "title": "Why talking to an alien is (almost) impossible",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T09:59:05+00:00",
-   "short": false
-  },
-  {
-   "id": "TeAlTu1BBGI",
-   "title": "Reprogram YOUR brain for success in 258 seconds.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:05+00:00",
-   "short": false
-  },
-  {
-   "id": "mBT0cxPqnIE",
-   "title": "30 ans de recherche sur le Sommeil résumée en 13 minutes",
-   "channel": "Céline De Luca | Memory Athlete",
-   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-10-26T09:59:05+00:00",
    "short": false
   },
@@ -2195,5 +2195,5 @@
    "short": false
   }
  ],
- "updated": "2026-10-29T11:48:14+00:00"
+ "updated": "2026-10-29T18:22:21+00:00"
 }
