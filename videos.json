@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "xyrmgQsOgbg",
+   "title": "On s’est trompés sur l’AMÉLIORATION HUMAINE (voilà ce que ça change vraiment)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-10-31T00:09:06+00:00",
+   "short": false
+  },
+  {
    "id": "pIZ0pxqdoFE",
    "title": "Here Is How to Change Your Life in 90 Days",
    "channel": "chris LR",
@@ -991,14 +999,6 @@
    "title": "The Effect That Makes You Want to Know",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
-   "published": "2026-10-26T09:59:05+00:00",
-   "short": false
-  },
-  {
-   "id": "qFWVhun3z9E",
-   "title": "Why talking to an alien is (almost) impossible",
-   "channel": "Christophe Pauly",
-   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
    "published": "2026-10-26T09:59:05+00:00",
    "short": false
   },
@@ -2187,5 +2187,5 @@
    "short": false
   }
  ],
- "updated": "2026-10-30T20:41:19+00:00"
+ "updated": "2026-10-31T00:09:06+00:00"
 }
