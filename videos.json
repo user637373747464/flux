@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "Ve8bEWqU0PI",
+   "title": "Why do you only succeed when you don't give a damn?",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-11-02T18:30:18+00:00",
+   "short": false
+  },
+  {
    "id": "xyrmgQsOgbg",
    "title": "We Got TRANSHUMANISM Wrong (here is what’s actually possible)",
    "channel": "Christophe Pauly",
@@ -628,7 +636,7 @@
   },
   {
    "id": "wKzqt8_w-_M",
-   "title": "How to Pass Your Finals Without Studying Too Much (For Real)",
+   "title": "Réussir son BAC sans trop Réviser (pour de vrai)",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:12+00:00",
@@ -788,7 +796,7 @@
   },
   {
    "id": "5tQlMwutAkE",
-   "title": "LE JEU qui a révolutionné TOUS les JEUX-VIDEO",
+   "title": "THE GAME that revolutionized ALL VIDEO GAMES",
    "channel": "TRY",
    "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
    "published": "2026-10-26T09:59:09+00:00",
@@ -967,14 +975,6 @@
    "title": "Why WE will NEVER know EVERYTHING (Gödel proved it)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T09:59:06+00:00",
-   "short": false
-  },
-  {
-   "id": "H5RhV3AQtDA",
-   "title": "The Only Way to Become Who You Want to Be",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T09:59:06+00:00",
    "short": false
   },
@@ -2187,5 +2187,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-02T08:11:24+00:00"
+ "updated": "2026-11-02T18:30:18+00:00"
 }
