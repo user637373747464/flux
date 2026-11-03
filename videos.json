@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "H9WKNsFlJ2c",
+   "title": "Vous allez mourir à cette date",
+   "channel": "Lacrimosophia",
+   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
+   "published": "2026-11-03T21:57:02+00:00",
+   "short": false
+  },
+  {
    "id": "7yYgSjdJETo",
    "title": "I visited a PARTICLE ACCELERATOR (with Patrick Baud - Axolot)",
    "channel": "Christophe Pauly",
@@ -364,7 +372,7 @@
   },
   {
    "id": "RpVJVUGfu1Q",
-   "title": "Il a Dominé le Monde en Partant de Zéro (et comment faire pareil)",
+   "title": "He Dominated the World Starting From Zero (and how you can too)",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:17+00:00",
@@ -788,7 +796,7 @@
   },
   {
    "id": "vwYv6u-2-lY",
-   "title": "How to REPROGRAM your BRAIN?",
+   "title": "Comment REPROGRAMMER son CERVEAU ?",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-10-26T09:59:10+00:00",
@@ -984,14 +992,6 @@
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-10-26T09:59:06+00:00",
-   "short": false
-  },
-  {
-   "id": "4PADGm75Voo",
-   "title": "Cette fleur humilie toutes les philosophies",
-   "channel": "Lacrimosophia",
-   "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
-   "published": "2026-10-26T09:59:05+00:00",
    "short": false
   },
   {
@@ -2187,5 +2187,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-03T16:29:24+00:00"
+ "updated": "2026-11-03T21:57:02+00:00"
 }
