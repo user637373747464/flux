@@ -43,14 +43,6 @@
  },
  "videos": [
   {
-   "id": "7rT6oKdEI6E",
-   "title": "L'iceberg des objets cosmiques expliqué",
-   "channel": "Sol",
-   "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
-   "published": "2026-11-08T01:44:56+00:00",
-   "short": false
-  },
-  {
    "id": "0aM_dyXixsk",
    "title": "Become So PRODUCTIVE It’s Almost ILLEGAL",
    "channel": "chris LR",
@@ -396,7 +388,7 @@
   },
   {
    "id": "RpVJVUGfu1Q",
-   "title": "Il a Dominé le Monde en Partant de Zéro (et comment faire pareil)",
+   "title": "He Dominated the World Starting From Zero (and how you can too)",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:17+00:00",
@@ -676,7 +668,7 @@
   },
   {
    "id": "wKzqt8_w-_M",
-   "title": "How to Pass Your Finals Without Studying Too Much (For Real)",
+   "title": "Réussir son BAC sans trop Réviser (pour de vrai)",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:12+00:00",
@@ -2020,7 +2012,7 @@
   },
   {
    "id": "NI2pF6dUUtY",
-   "title": "Why your brain hallucinates every night",
+   "title": "Pourquoi votre cerveau hallucine chaque nuit",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-08-27T17:00:16+00:00",
@@ -2076,7 +2068,7 @@
   },
   {
    "id": "UxLl6R5LmNc",
-   "title": "The Absurd Future If Matter Is Immortal",
+   "title": "Le futur absurde si la matière est immortelle",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-07-12T15:00:24+00:00",
@@ -2092,7 +2084,7 @@
   },
   {
    "id": "LzM823yOK_Q",
-   "title": "Is the universe inside a black hole?",
+   "title": "L'univers est-il dans un trou noir ?",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-06-10T17:00:38+00:00",
@@ -2116,7 +2108,7 @@
   },
   {
    "id": "oNWQg2AXWyo",
-   "title": "How to steal life's greatest secret",
+   "title": "Comment voler le plus grand secret de la vie",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-02-27T18:00:58+00:00",
@@ -2124,7 +2116,7 @@
   },
   {
    "id": "eqwnft8BroU",
-   "title": "Why does the Universe forbid us from going back in time?",
+   "title": "Pourquoi l'Univers nous interdit de remonter le temps ?",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-12-14T18:00:44+00:00",
@@ -2132,7 +2124,7 @@
   },
   {
    "id": "Z3c7d9jHA3U",
-   "title": "I investigated global warming, it's worse than I thought",
+   "title": "J'ai enquêté sur le réchauffement climatique, c'est pire que ce que je pensais",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-08-31T16:30:21+00:00",
@@ -2140,7 +2132,7 @@
   },
   {
    "id": "TP6iz7PNbgc",
-   "title": "The Theory of Everything: A Single Law to Explain the Universe?",
+   "title": "La théorie du tout : une seule loi pour expliquer l'Univers ?",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-07-22T18:31:00+00:00",
@@ -2156,7 +2148,7 @@
   },
   {
    "id": "hON2-p10qEg",
-   "title": "Where are the aliens? | All the solutions to the Fermi paradox",
+   "title": "Où sont les extraterrestres ? | Toutes les solutions au paradoxe de Fermi",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-03-23T19:09:34+00:00",
@@ -2172,7 +2164,7 @@
   },
   {
    "id": "uGtj6ZSgYNk",
-   "title": "The paradox that breaks the laws of physics",
+   "title": "Le paradoxe qui brise les lois de la physique",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-01-29T18:04:37+00:00",
@@ -2180,12 +2172,12 @@
   },
   {
    "id": "kvDEmQ4Pr44",
-   "title": "13 Unsolved Mysteries That Terrify Science",
+   "title": "13 mystères irrésolus qui terrifient la science",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-01-10T17:30:08+00:00",
    "short": false
   }
  ],
- "updated": "2026-11-08T01:45:11+00:00"
+ "updated": "2026-11-08T08:51:27+00:00"
 }
