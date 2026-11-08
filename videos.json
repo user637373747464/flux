@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "NSHyeupxlxk",
+   "title": "FINALLL",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-11-08T20:22:13+00:00",
+   "short": false
+  },
+  {
    "id": "7rT6oKdEI6E",
    "title": "L'iceberg des objets cosmiques expliqué",
    "channel": "Sol",
@@ -971,14 +979,6 @@
    "short": false
   },
   {
-   "id": "nDVhALw-0z4",
-   "title": "The power of taking risks.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:07+00:00",
-   "short": false
-  },
-  {
    "id": "fXg0P_0UzIo",
    "title": "Scatterbrained? This Method Saved My Life!",
    "channel": "Céline De Luca | Memory Athlete",
@@ -1012,7 +1012,7 @@
   },
   {
    "id": "o8mX_qZAD08",
-   "title": "La technologie la plus effrayante au monde",
+   "title": "The Scariest Technology in the World",
    "channel": "TRY",
    "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
    "published": "2026-10-26T04:09:33+00:00",
@@ -2187,5 +2187,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-08T15:53:54+00:00"
+ "updated": "2026-11-08T20:22:13+00:00"
 }
