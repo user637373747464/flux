@@ -43,8 +43,16 @@
  },
  "videos": [
   {
+   "id": "WlrRicNqNW8",
+   "title": "Yellowstone is perfectly harmless *",
+   "channel": "TRY",
+   "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
+   "published": "2026-11-12T20:24:26+00:00",
+   "short": false
+  },
+  {
    "id": "YwVxp5PZ6oE",
-   "title": "The Psychology of Verbal Intelligence (How to Think and Speak Clearly)",
+   "title": "The FULL Guide to Verbal Intelligence (Speak So People Assume You’re Smart)",
    "channel": "Power IQ",
    "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
    "published": "2026-11-10T15:49:40+00:00",
@@ -2187,5 +2195,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-12T12:30:01+00:00"
+ "updated": "2026-11-12T20:24:26+00:00"
 }
