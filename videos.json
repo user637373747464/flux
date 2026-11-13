@@ -43,6 +43,22 @@
  },
  "videos": [
   {
+   "id": "vM-cztU53cw",
+   "title": "Donne-moi 3 minutes et j'effacerai Ta Peur de L'échec",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-11-13T16:45:39+00:00",
+   "short": false
+  },
+  {
+   "id": "cQINVvMZQfU",
+   "title": "How to Train Your INTUITION (And When Not to Trust It)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-11-13T16:45:39+00:00",
+   "short": false
+  },
+  {
    "id": "WlrRicNqNW8",
    "title": "You're fearing the wrong volcano",
    "channel": "TRY",
@@ -240,14 +256,6 @@
    "channel": "Power IQ",
    "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
    "published": "2026-10-30T20:40:53+00:00",
-   "short": false
-  },
-  {
-   "id": "CNPe70xI95g",
-   "title": "Denji's Fatal Flaw Costs Him Everything",
-   "channel": "Power IQ",
-   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
-   "published": "2026-10-30T20:40:52+00:00",
    "short": false
   },
   {
@@ -692,7 +700,7 @@
   },
   {
    "id": "wKzqt8_w-_M",
-   "title": "How to Pass Your Finals Without Studying Too Much (For Real)",
+   "title": "Réussir son BAC sans trop Réviser (pour de vrai)",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:12+00:00",
@@ -892,7 +900,7 @@
   },
   {
    "id": "fOGKzYvuQ_o",
-   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
+   "title": "Voici les PIRES conseils POPULAIRES de développement personnel (PARTIE 2)",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-10-26T09:59:09+00:00",
@@ -959,14 +967,6 @@
    "title": "Les pires souffrances",
    "channel": "Lacrimosophia",
    "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
-   "published": "2026-10-26T09:59:07+00:00",
-   "short": false
-  },
-  {
-   "id": "aePcHOUFDC4",
-   "title": "Become so strong that they all want to be like you.",
-   "channel": "chris LR",
-   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:07+00:00",
    "short": false
   },
@@ -2195,5 +2195,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-13T08:40:40+00:00"
+ "updated": "2026-11-13T16:45:39+00:00"
 }
