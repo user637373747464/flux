@@ -43,8 +43,16 @@
  },
  "videos": [
   {
+   "id": "oNnDsrnd9zU",
+   "title": "We Got the Dyson Sphere Wrong (Here’s the Version That Works)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-11-13T22:28:11+00:00",
+   "short": false
+  },
+  {
    "id": "vM-cztU53cw",
-   "title": "Donne-moi 3 minutes et j'effacerai Ta Peur de L'échec",
+   "title": "Give Me 3 Minutes and I'll Erase Your Fear of Failure",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-11-13T16:45:39+00:00",
@@ -700,7 +708,7 @@
   },
   {
    "id": "wKzqt8_w-_M",
-   "title": "Réussir son BAC sans trop Réviser (pour de vrai)",
+   "title": "How to Pass Your Finals Without Studying Too Much (For Real)",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:12+00:00",
@@ -900,7 +908,7 @@
   },
   {
    "id": "fOGKzYvuQ_o",
-   "title": "Voici les PIRES conseils POPULAIRES de développement personnel (PARTIE 2)",
+   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-10-26T09:59:09+00:00",
@@ -975,14 +983,6 @@
    "title": "The Perfect Villain: Hans Landa",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
-   "published": "2026-10-26T09:59:07+00:00",
-   "short": false
-  },
-  {
-   "id": "3IJOM3Wv2cc",
-   "title": "PROOF that AI is NO LONGER a TOOL: it's an AUTONOMOUS AGENT",
-   "channel": "Christophe Pauly",
-   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
    "published": "2026-10-26T09:59:07+00:00",
    "short": false
   },
@@ -2195,5 +2195,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-13T16:45:39+00:00"
+ "updated": "2026-11-13T22:28:11+00:00"
 }
