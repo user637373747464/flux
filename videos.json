@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "FHG4fO4wxi4",
+   "title": "Les IA d’OpenAI ont piraté OpenAI. Voilà comment.",
+   "channel": "EGO",
+   "channelId": "UCxH16958KSxT4Z9yL_9JYtw",
+   "published": "2026-11-19T22:05:57+00:00",
+   "short": false
+  },
+  {
    "id": "JEhO7NBWq9k",
    "title": "The Price of Ambition (and why it's worth it)",
    "channel": "Lucas Hof",
@@ -1076,7 +1084,7 @@
   },
   {
    "id": "mFWwc_TK30M",
-   "title": "La honte d'être heureux",
+   "title": "La culpabilité d'être heureux",
    "channel": "Lacrimosophia",
    "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
    "published": "2026-10-26T04:09:32+00:00",
@@ -1884,7 +1892,7 @@
   },
   {
    "id": "vm7NdoFavgo",
-   "title": "Stop Playing the Tutorial of Your Life and Start the Real Game.",
+   "title": "Arrête de jouer au tutoriel de ta vie et lance le vrai jeu.",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:20+00:00",
@@ -2195,5 +2203,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-19T13:57:37+00:00"
+ "updated": "2026-11-19T22:05:57+00:00"
 }
