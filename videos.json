@@ -43,6 +43,38 @@
  },
  "videos": [
   {
+   "id": "-1HD200yIBc",
+   "title": "How to find time to DO IT ALL (10x more PRODUCTIVE without burnout)",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-11-20T20:27:12+00:00",
+   "short": false
+  },
+  {
+   "id": "UN7o8IYPiD0",
+   "title": "Love Does NOT Make You Happy - 500 Days of Summer",
+   "channel": "Laganne",
+   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
+   "published": "2026-11-20T20:27:12+00:00",
+   "short": false
+  },
+  {
+   "id": "EgJ8eoe6ZrM",
+   "title": "Pourquoi on meurt encore de vieillesse ?",
+   "channel": "Sol",
+   "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
+   "published": "2026-11-20T20:27:12+00:00",
+   "short": false
+  },
+  {
+   "id": "cJBa8AY2Z6w",
+   "title": "The Psychology of DISCIPLINE (And How to Actually Build It)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-11-20T20:27:12+00:00",
+   "short": false
+  },
+  {
    "id": "FHG4fO4wxi4",
    "title": "Les IA d’OpenAI ont piraté OpenAI. Voilà comment.",
    "channel": "EGO",
@@ -272,14 +304,6 @@
    "channel": "Power IQ",
    "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
    "published": "2026-10-30T20:40:54+00:00",
-   "short": false
-  },
-  {
-   "id": "sM57wXXt8fA",
-   "title": "Chainsaw Man Is Not A Gooner Anime (Denji Analysis)",
-   "channel": "Power IQ",
-   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
-   "published": "2026-10-30T20:40:53+00:00",
    "short": false
   },
   {
@@ -947,14 +971,6 @@
    "short": false
   },
   {
-   "id": "BLgEyB2E5G8",
-   "title": "If you want to succeed, you absolutely MUST do this!",
-   "channel": "chris LR",
-   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
-   "published": "2026-10-26T09:59:08+00:00",
-   "short": false
-  },
-  {
    "id": "MznosFR7Gx8",
    "title": "Le Problème de Michael Scott - The Office",
    "channel": "Laganne",
@@ -1007,14 +1023,6 @@
    "title": "Se méfier des compliments de nos amis",
    "channel": "Lacrimosophia",
    "channelId": "UC6qIbVFPyRBXBkcav0Ar0yw",
-   "published": "2026-10-26T09:59:06+00:00",
-   "short": false
-  },
-  {
-   "id": "rDkIjpYsDuY",
-   "title": "The Sneaky Signs You're Pushing People Away",
-   "channel": "Laganne",
-   "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
    "published": "2026-10-26T09:59:06+00:00",
    "short": false
   },
@@ -1836,7 +1844,7 @@
   },
   {
    "id": "33Q_j1MrB18",
-   "title": "Comment developper son intelligence ?",
+   "title": "How to Actually Become More Intelligent",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-10-26T04:09:21+00:00",
@@ -2203,5 +2211,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-20T12:04:30+00:00"
+ "updated": "2026-11-20T20:27:12+00:00"
 }
