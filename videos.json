@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "VmlfHnsQQZY",
+   "title": "282",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-11-21T21:56:04+00:00",
+   "short": false
+  },
+  {
    "id": "-1HD200yIBc",
    "title": "How to find time to DO IT ALL (10x more PRODUCTIVE without burnout)",
    "channel": "chris LR",
@@ -52,7 +60,7 @@
   },
   {
    "id": "UN7o8IYPiD0",
-   "title": "The Love of Your Life Doesn't Exist - 500 Days of Summer",
+   "title": "Love DOES NOT Make You Happy - 500 Days of Summer",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
    "published": "2026-11-20T20:27:12+00:00",
@@ -939,14 +947,6 @@
    "short": false
   },
   {
-   "id": "Gjgtgk8z4SQ",
-   "title": "Go Get More.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:09+00:00",
-   "short": false
-  },
-  {
    "id": "fOGKzYvuQ_o",
    "title": "Here are the WORST POPULAR self-development tips (PART 2)",
    "channel": "Céline De Luca | Memory Athlete",
@@ -1100,7 +1100,7 @@
   },
   {
    "id": "kD1MO_kMuOc",
-   "title": "Combien l'État est-il prêt à payer pour vous sauver ?",
+   "title": "Pourquoi mettre un prix sur votre vie permet de vous sauver",
    "channel": "TRY",
    "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
    "published": "2026-10-26T04:09:32+00:00",
@@ -2211,5 +2211,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-21T16:43:17+00:00"
+ "updated": "2026-11-21T21:56:04+00:00"
 }
