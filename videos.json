@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "ZKnQp7iXqHE",
+   "title": "I Reprogrammed My Brain in 21 Days (Using Neurofeedback)",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-11-24T21:33:24+00:00",
+   "short": false
+  },
+  {
    "id": "ns1GuIMV6I4",
    "title": "We got the BIG BANG wrong (it might NOT have been the BEGINNING)",
    "channel": "Christophe Pauly",
@@ -164,7 +172,7 @@
   },
   {
    "id": "fOGKzYvuQ_o",
-   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
+   "title": "Voici les PIRES conseils POPULAIRES de développement personnel (PARTIE 2)",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-11-23T03:38:50+00:00",
@@ -176,14 +184,6 @@
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-11-23T03:38:49+00:00",
-   "short": false
-  },
-  {
-   "id": "fXg0P_0UzIo",
-   "title": "Scatterbrained? This Method Saved My Life!",
-   "channel": "Céline De Luca | Memory Athlete",
-   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
-   "published": "2026-11-23T03:38:48+00:00",
    "short": false
   },
   {
@@ -211,19 +211,19 @@
    "short": false
   },
   {
-   "id": "EgJ8eoe6ZrM",
-   "title": "Pourquoi votre grand-mère ne devrait pas exister",
-   "channel": "Sol",
-   "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
-   "published": "2026-11-20T20:27:12+00:00",
-   "short": false
-  },
-  {
    "id": "cJBa8AY2Z6w",
    "title": "The Psychology of DISCIPLINE (And How to Actually Build It)",
    "channel": "Power IQ",
    "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
    "published": "2026-11-20T20:27:12+00:00",
+   "short": false
+  },
+  {
+   "id": "EgJ8eoe6ZrM",
+   "title": "Pourquoi votre grand-mère ne devrait pas exister",
+   "channel": "Sol",
+   "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
+   "published": "2026-11-20T17:00:17+00:00",
    "short": false
   },
   {
@@ -268,7 +268,7 @@
   },
   {
    "id": "WlrRicNqNW8",
-   "title": "The Lie About the Yellowstone Volcano",
+   "title": "The Lie Behind Yellowstone",
    "channel": "TRY",
    "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
    "published": "2026-11-12T20:24:26+00:00",
@@ -288,14 +288,6 @@
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-11-08T20:22:13+00:00",
-   "short": false
-  },
-  {
-   "id": "7rT6oKdEI6E",
-   "title": "L'iceberg des objets cosmiques expliqué",
-   "channel": "Sol",
-   "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
-   "published": "2026-11-08T15:53:39+00:00",
    "short": false
   },
   {
@@ -556,7 +548,7 @@
   },
   {
    "id": "HWTLM_lmUBU",
-   "title": "Ce Phénomène est en train de Détruire L'Homme Moderne",
+   "title": "This Phenomenon Is Destroying Modern Man",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:18+00:00",
@@ -708,7 +700,7 @@
   },
   {
    "id": "7X1zAAX8FEY",
-   "title": "Your Age Says Everything About You",
+   "title": "Ton Âge Dit Tout Sur Toi",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
    "published": "2026-10-26T09:59:15+00:00",
@@ -748,7 +740,7 @@
   },
   {
    "id": "AHw6eEV9fcY",
-   "title": "La méthode OUBLIÉE pour que tout le monde te respecte",
+   "title": "The FORGOTTEN method to make everyone respect you",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:14+00:00",
@@ -892,7 +884,7 @@
   },
   {
    "id": "2Gf4E-M2kRo",
-   "title": "Ce que les Jeux-vidéo disent sur Toi",
+   "title": "What Video Games Say About You",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:11+00:00",
@@ -1804,7 +1796,7 @@
   },
   {
    "id": "VfJq-hfXpmE",
-   "title": "Si Tu Passes Tes Nuits à Réfléchir, regarde cette vidéo",
+   "title": "If You Spend Your Nights Overthinking, Watch This Video",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T04:09:20+00:00",
@@ -2020,7 +2012,7 @@
   },
   {
    "id": "NI2pF6dUUtY",
-   "title": "Why your brain hallucinates every night",
+   "title": "Pourquoi votre cerveau hallucine chaque nuit",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-08-27T17:00:16+00:00",
@@ -2100,7 +2092,7 @@
   },
   {
    "id": "UxLl6R5LmNc",
-   "title": "The Absurd Future If Matter Is Immortal",
+   "title": "Le futur absurde si la matière est immortelle",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-07-12T15:00:24+00:00",
@@ -2116,7 +2108,7 @@
   },
   {
    "id": "LzM823yOK_Q",
-   "title": "Is the universe inside a black hole?",
+   "title": "L'univers est-il dans un trou noir ?",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-06-10T17:00:38+00:00",
@@ -2140,7 +2132,7 @@
   },
   {
    "id": "oNWQg2AXWyo",
-   "title": "How to steal life's greatest secret",
+   "title": "Comment voler le plus grand secret de la vie",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-02-27T18:00:58+00:00",
@@ -2148,7 +2140,7 @@
   },
   {
    "id": "eqwnft8BroU",
-   "title": "Why does the Universe forbid us from going back in time?",
+   "title": "Pourquoi l'Univers nous interdit de remonter le temps ?",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-12-14T18:00:44+00:00",
@@ -2156,7 +2148,7 @@
   },
   {
    "id": "Z3c7d9jHA3U",
-   "title": "I investigated global warming, it's worse than I thought",
+   "title": "J'ai enquêté sur le réchauffement climatique, c'est pire que ce que je pensais",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-08-31T16:30:21+00:00",
@@ -2164,7 +2156,7 @@
   },
   {
    "id": "TP6iz7PNbgc",
-   "title": "The Theory of Everything: A Single Law to Explain the Universe?",
+   "title": "La théorie du tout : une seule loi pour expliquer l'Univers ?",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-07-22T18:31:00+00:00",
@@ -2180,7 +2172,7 @@
   },
   {
    "id": "hON2-p10qEg",
-   "title": "Where are the aliens? | All the solutions to the Fermi paradox",
+   "title": "Où sont les extraterrestres ? | Toutes les solutions au paradoxe de Fermi",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-03-23T19:09:34+00:00",
@@ -2196,20 +2188,12 @@
   },
   {
    "id": "uGtj6ZSgYNk",
-   "title": "The paradox that breaks the laws of physics",
+   "title": "Le paradoxe qui brise les lois de la physique",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-01-29T18:04:37+00:00",
    "short": false
-  },
-  {
-   "id": "kvDEmQ4Pr44",
-   "title": "13 Unsolved Mysteries That Terrify Science",
-   "channel": "Sol",
-   "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
-   "published": "2025-01-10T17:30:08+00:00",
-   "short": false
   }
  ],
- "updated": "2026-11-24T11:32:43+00:00"
+ "updated": "2026-11-24T21:33:24+00:00"
 }
