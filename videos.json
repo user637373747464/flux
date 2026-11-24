@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "ns1GuIMV6I4",
+   "title": "We got the BIG BANG wrong (it might NOT have been the BEGINNING)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "2026-11-24T01:16:09+00:00",
+   "short": false
+  },
+  {
    "id": "8rciQowBFBE",
    "title": "Why Some People Learn So Fast (And It’s Not About Intelligence)",
    "channel": "Céline De Luca | Memory Athlete",
@@ -156,7 +164,7 @@
   },
   {
    "id": "fOGKzYvuQ_o",
-   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
+   "title": "Voici les PIRES conseils POPULAIRES de développement personnel (PARTIE 2)",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-11-23T03:38:50+00:00",
@@ -204,7 +212,7 @@
   },
   {
    "id": "EgJ8eoe6ZrM",
-   "title": "Pourquoi on meurt encore de vieillesse ?",
+   "title": "Certains animaux ne vieillissent pas. Pourquoi pas nous ?",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-11-20T20:27:12+00:00",
@@ -260,7 +268,7 @@
   },
   {
    "id": "WlrRicNqNW8",
-   "title": "Yellowstone is perfectly harmless *",
+   "title": "Yellowstone is perfectly harmless",
    "channel": "TRY",
    "channelId": "UCdV6JBe40vqPQOsG4boS5zQ",
    "published": "2026-11-12T20:24:26+00:00",
@@ -1023,14 +1031,6 @@
    "title": "Le Problème de Michael Scott - The Office",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
-   "published": "2026-10-26T09:59:08+00:00",
-   "short": false
-  },
-  {
-   "id": "iuomcXona2w",
-   "title": "The PROOF that your DECISIONS are MANIPULATED (from Pavlov to AI)",
-   "channel": "Christophe Pauly",
-   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
    "published": "2026-10-26T09:59:08+00:00",
    "short": false
   },
@@ -2211,5 +2211,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-23T13:42:43+00:00"
+ "updated": "2026-11-24T01:16:09+00:00"
 }
