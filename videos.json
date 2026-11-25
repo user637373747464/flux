@@ -43,6 +43,14 @@
  },
  "videos": [
   {
+   "id": "GwzKVyB84YU",
+   "title": "The man who keeps moving forward will always find his luck",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-11-25T23:40:10+00:00",
+   "short": false
+  },
+  {
    "id": "kvDEmQ4Pr44",
    "title": "13 Unsolved Mysteries That Terrify Science",
    "channel": "Sol",
@@ -180,7 +188,7 @@
   },
   {
    "id": "vwYv6u-2-lY",
-   "title": "Comment REPROGRAMMER son CERVEAU ?",
+   "title": "How to REPROGRAM your BRAIN?",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-11-23T03:38:51+00:00",
@@ -188,7 +196,7 @@
   },
   {
    "id": "fOGKzYvuQ_o",
-   "title": "Voici les PIRES conseils POPULAIRES de développement personnel (PARTIE 2)",
+   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-11-23T03:38:50+00:00",
@@ -967,14 +975,6 @@
    "title": "The NIGHT is NOT BLACK: the cosmological PROOF",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T09:59:10+00:00",
-   "short": false
-  },
-  {
-   "id": "9SjivlOL3NI",
-   "title": "When You Ignore Reality, You Get Everything You Want",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T09:59:10+00:00",
    "short": false
   },
@@ -2211,5 +2211,5 @@
    "short": false
   }
  ],
- "updated": "2026-11-25T15:00:29+00:00"
+ "updated": "2026-11-25T23:40:10+00:00"
 }
