@@ -43,11 +43,35 @@
  },
  "videos": [
   {
+   "id": "KnOauYNYgt4",
+   "title": "The Bias That Makes People Want to Open Up to You",
+   "channel": "chris LR",
+   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
+   "published": "2026-11-27T18:29:57+00:00",
+   "short": false
+  },
+  {
+   "id": "Aan6PmLr9Ig",
+   "title": "How I (almost) stopped studying",
+   "channel": "Céline De Luca | Memory Athlete",
+   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
+   "published": "2026-11-27T18:29:57+00:00",
+   "short": false
+  },
+  {
+   "id": "b3Nl706VW9Y",
+   "title": "The ULTIMATE Guide to Improving STRATEGY (Complete Category Breakdown)",
+   "channel": "Power IQ",
+   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
+   "published": "2026-11-27T18:29:57+00:00",
+   "short": false
+  },
+  {
    "id": "GwzKVyB84YU",
-   "title": "The man who keeps moving forward will always find his luck",
+   "title": "L’homme qui avance finit toujours par trouver sa chance",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-11-25T23:40:10+00:00",
+   "published": "2026-11-25T17:00:06+00:00",
    "short": false
   },
   {
@@ -196,26 +220,18 @@
   },
   {
    "id": "fOGKzYvuQ_o",
-   "title": "Voici les PIRES conseils POPULAIRES de développement personnel (PARTIE 2)",
+   "title": "Here are the WORST POPULAR self-development tips (PART 2)",
    "channel": "Céline De Luca | Memory Athlete",
    "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
    "published": "2026-11-23T03:38:50+00:00",
    "short": false
   },
   {
-   "id": "_GT84ntTfSc",
-   "title": "Is it possible to memorize your books without taking notes?",
-   "channel": "Céline De Luca | Memory Athlete",
-   "channelId": "UCq4yubqNen3DFZjYLXR9huQ",
-   "published": "2026-11-23T03:38:49+00:00",
-   "short": false
-  },
-  {
    "id": "VmlfHnsQQZY",
-   "title": "282",
+   "title": "Plus tu négocies avec ton cerveau, plus tu as une vie de m*rde (Comment changer)",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-11-21T21:56:04+00:00",
+   "published": "2026-11-21T16:45:05+00:00",
    "short": false
   },
   {
@@ -228,7 +244,7 @@
   },
   {
    "id": "UN7o8IYPiD0",
-   "title": "The Love of Your Life Doesn't Exist - 500 Days of Summer",
+   "title": "The Love of Your Life Doesn't Exist",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
    "published": "2026-11-20T20:27:12+00:00",
@@ -260,10 +276,10 @@
   },
   {
    "id": "JEhO7NBWq9k",
-   "title": "The Price of Ambition (and why it's worth it)",
+   "title": "Le prix de l'ambition (et pourquoi ça vaut le coup)",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-11-15T20:25:34+00:00",
+   "published": "2026-11-15T17:00:08+00:00",
    "short": false
   },
   {
@@ -308,10 +324,10 @@
   },
   {
    "id": "NSHyeupxlxk",
-   "title": "FINALLL",
+   "title": "Si t'as trop d'intérêts, ne gâche pas les 10 prochaines années",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-11-08T20:22:13+00:00",
+   "published": "2026-11-08T17:00:25+00:00",
    "short": false
   },
   {
@@ -364,10 +380,10 @@
   },
   {
    "id": "Ve8bEWqU0PI",
-   "title": "You'll get everything you want when you stop giving a damn.",
+   "title": "Tu auras tout ce que tu veux, quand tu commenceras a en avoir rien à f*utre",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-11-02T18:30:18+00:00",
+   "published": "2026-11-02T16:45:26+00:00",
    "short": false
   },
   {
@@ -467,14 +483,6 @@
    "short": false
   },
   {
-   "id": "QZvdZySyDss",
-   "title": "Get SHREDDED Like Daniel Park (Lookism Calisthenics Guide)",
-   "channel": "Power IQ",
-   "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
-   "published": "2026-10-30T20:40:54+00:00",
-   "short": false
-  },
-  {
    "id": "6A5OsbyFwwE",
    "title": "Every Type of INTELLIGENCE Explained (And How to Improve Them)",
    "channel": "Power IQ",
@@ -484,10 +492,10 @@
   },
   {
    "id": "yW9vi5QTq3k",
-   "title": "Burn Your Plan B",
+   "title": "Brûle ton plan B",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-29T18:22:21+00:00",
+   "published": "2026-10-29T17:05:29+00:00",
    "short": false
   },
   {
@@ -547,14 +555,6 @@
    "short": false
   },
   {
-   "id": "m2nUbMZwFrA",
-   "title": "262FINAL",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:19+00:00",
-   "short": false
-  },
-  {
    "id": "AhpJilx9mxQ",
    "title": "Pourquoi la souffrance ouvre les yeux ?",
    "channel": "Lacrimosophia",
@@ -591,14 +591,6 @@
    "title": "The CRAZY PLAN to CONTROL EARTH across the GALAXY",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T09:59:18+00:00",
-   "short": false
-  },
-  {
-   "id": "tJPmY7wyXLk",
-   "title": "VFINAL",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T09:59:18+00:00",
    "short": false
   },
@@ -643,14 +635,6 @@
    "short": false
   },
   {
-   "id": "TWEs6HNHEQs",
-   "title": "When you embrace chaos, you become unstoppable",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:17+00:00",
-   "short": false
-  },
-  {
    "id": "aqz_iw7svxM",
    "title": "La théorie de la boîte",
    "channel": "Lacrimosophia",
@@ -687,14 +671,6 @@
    "title": "We Were Wrong About the REAL COST of NUCLEAR ENERGY (and it’s crucial for the climate)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T09:59:16+00:00",
-   "short": false
-  },
-  {
-   "id": "mjTH6PDe4dQ",
-   "title": "When you understand this, everything changes.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T09:59:16+00:00",
    "short": false
   },
@@ -739,14 +715,6 @@
    "short": false
   },
   {
-   "id": "B_jcoxVNITA",
-   "title": "Treat Business Like a Video Game and Become Free",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:15+00:00",
-   "short": false
-  },
-  {
    "id": "DdBz-Mu1nis",
    "title": "L'opportunité du chaos",
    "channel": "Lacrimosophia",
@@ -783,14 +751,6 @@
    "title": "Why the POLES will FLIP (and what it means for YOU)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T09:59:14+00:00",
-   "short": false
-  },
-  {
-   "id": "URRq9Jv3ieg",
-   "title": "You already know what you should be doing.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T09:59:14+00:00",
    "short": false
   },
@@ -835,14 +795,6 @@
    "short": false
   },
   {
-   "id": "eR6fy9UsU9o",
-   "title": "200 seconds to convince you to put down your phone.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:13+00:00",
-   "short": false
-  },
-  {
    "id": "t_BEWFYN7l4",
    "title": "Détruire son identité",
    "channel": "Lacrimosophia",
@@ -883,14 +835,6 @@
    "short": false
   },
   {
-   "id": "1oZGyaNgn-U",
-   "title": "Your Life Operates in Seasons, Choose Yours",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T09:59:12+00:00",
-   "short": false
-  },
-  {
    "id": "7gljfQuziVo",
    "title": "Qui choisirez-vous de tuer ?",
    "channel": "Lacrimosophia",
@@ -908,7 +852,7 @@
   },
   {
    "id": "2Gf4E-M2kRo",
-   "title": "What Video Games Say About You",
+   "title": "Ce que les Jeux-vidéo disent sur Toi",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T09:59:11+00:00",
@@ -927,14 +871,6 @@
    "title": "Le JOUR où NOUS N’AVIONS AUCUNE CHANCE (Chelyabinsk, 2013)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T09:59:11+00:00",
-   "short": false
-  },
-  {
-   "id": "pkaSgtOGPg0",
-   "title": "Casse-toi la gueule",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T09:59:11+00:00",
    "short": false
   },
@@ -995,26 +931,10 @@
    "short": false
   },
   {
-   "id": "_jkK6RpOqqQ",
-   "title": "If you feel empty, watch this video.",
-   "channel": "chris LR",
-   "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
-   "published": "2026-10-26T09:59:09+00:00",
-   "short": false
-  },
-  {
    "id": "Fq6YWqxxaSU",
    "title": "Pourquoi On Se Sent Vide ?",
    "channel": "Laganne",
    "channelId": "UCf9h3TSEiAiwubyWpLUtdwg",
-   "published": "2026-10-26T09:59:09+00:00",
-   "short": false
-  },
-  {
-   "id": "AEPGUMSe8G4",
-   "title": "The GREAT ATTRACTOR: INVISIBLE Architecture that sweeps us away",
-   "channel": "Christophe Pauly",
-   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
    "published": "2026-10-26T09:59:09+00:00",
    "short": false
   },
@@ -1115,14 +1035,6 @@
    "short": false
   },
   {
-   "id": "fUrDUY1MHdw",
-   "title": "277 FINALV2",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:33+00:00",
-   "short": false
-  },
-  {
    "id": "mFWwc_TK30M",
    "title": "La culpabilité d'être heureux",
    "channel": "Lacrimosophia",
@@ -1159,14 +1071,6 @@
    "title": "AI DISCOVERS all our flaws (and it’s terrifying)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T04:09:32+00:00",
-   "short": false
-  },
-  {
-   "id": "QWyEnFeMji0",
-   "title": "I live like a monk at 28. Here are my 7 rules for living",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:32+00:00",
    "short": false
   },
@@ -1219,14 +1123,6 @@
    "short": false
   },
   {
-   "id": "X1fLXvviK7A",
-   "title": "275 V2",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:31+00:00",
-   "short": false
-  },
-  {
    "id": "W_byoKQdsCk",
    "title": "La réalité que vous n'êtes pas censé percevoir",
    "channel": "Lacrimosophia",
@@ -1271,14 +1167,6 @@
    "title": "The TRUTH about the SIMULATION HYPOTHESIS (the trilemma explained)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T04:09:30+00:00",
-   "short": false
-  },
-  {
-   "id": "gAOmC2zf5JI",
-   "title": "When you realize every choice counts, you stop letting life happen to you.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:30+00:00",
    "short": false
   },
@@ -1331,14 +1219,6 @@
    "short": false
   },
   {
-   "id": "ipBhxRYEY4A",
-   "title": "Your obsession with productivity is preventing you from doing your best work",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:29+00:00",
-   "short": false
-  },
-  {
    "id": "KGV4nYSDKGk",
    "title": "Le manchot face à l’absurde",
    "channel": "Lacrimosophia",
@@ -1383,14 +1263,6 @@
    "title": "Why won't Earth end up like Venus?",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T04:09:28+00:00",
-   "short": false
-  },
-  {
-   "id": "89JfHJt1Mho",
-   "title": "272FINAL2",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:28+00:00",
    "short": false
   },
@@ -1443,14 +1315,6 @@
    "short": false
   },
   {
-   "id": "Sp3viBfzlxQ",
-   "title": "I Beg You to Start Writing (Even If You Hate It)",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:27+00:00",
-   "short": false
-  },
-  {
    "id": "dEHWvRl1j8k",
    "title": "Comment se libérer de la peur",
    "channel": "Lacrimosophia",
@@ -1495,14 +1359,6 @@
    "title": "Light: The most DISTURBING secret in physics",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T04:09:26+00:00",
-   "short": false
-  },
-  {
-   "id": "GTd1gnESwjg",
-   "title": "The 5 Levels of Stimulation (and which one controls you)",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:26+00:00",
    "short": false
   },
@@ -1555,14 +1411,6 @@
    "short": false
   },
   {
-   "id": "fb55X0JbUuU",
-   "title": "90 Days to Change Your Life's Trajectory Before 2027",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:25+00:00",
-   "short": false
-  },
-  {
    "id": "BxMxjLCVJK0",
    "title": "Bienvenue en enfer",
    "channel": "Lacrimosophia",
@@ -1607,14 +1455,6 @@
    "title": "Why YOU will NEVER find EARTH (The trap of the void)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T04:09:24+00:00",
-   "short": false
-  },
-  {
-   "id": "tdDRf96mBd4",
-   "title": "I'm 28, here is my advice for men in their twenties",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:24+00:00",
    "short": false
   },
@@ -1667,14 +1507,6 @@
    "short": false
   },
   {
-   "id": "Qv1M4oDEci0",
-   "title": "How Personal Development Is Destroying an Entire Generation",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:23+00:00",
-   "short": false
-  },
-  {
    "id": "s-tlRhp0wk8",
    "title": "La terre n'a pas de mode d'emploi",
    "channel": "Lacrimosophia",
@@ -1719,14 +1551,6 @@
    "title": "The CURSE of the SOLAR SYSTEM (and how to break it)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T04:09:22+00:00",
-   "short": false
-  },
-  {
-   "id": "DCABf0S-qWs",
-   "title": "Choose Your Sacrifices, or Sacrifice Your Life",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:22+00:00",
    "short": false
   },
@@ -1779,14 +1603,6 @@
    "short": false
   },
   {
-   "id": "gOkuTpyUI-k",
-   "title": "Pourquoi ton identité actuelle est le seul obstacle entre toi et ton vrai potentiel",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:21+00:00",
-   "short": false
-  },
-  {
    "id": "xq88Ej5Vxtg",
    "title": "Bienvenue dans l’Happycratie",
    "channel": "Lacrimosophia",
@@ -1812,7 +1628,7 @@
   },
   {
    "id": "VfJq-hfXpmE",
-   "title": "Si Tu Passes Tes Nuits à Réfléchir, regarde cette vidéo",
+   "title": "If You Spend Your Nights Overthinking, Watch This Video",
    "channel": "chris LR",
    "channelId": "UCmeZlorLmoL_3hWkAeNX7-Q",
    "published": "2026-10-26T04:09:20+00:00",
@@ -1831,14 +1647,6 @@
    "title": "The PROOF that EARTH is a COSMIC ANOMALY (and it's terrifying)",
    "channel": "Christophe Pauly",
    "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
-   "published": "2026-10-26T04:09:20+00:00",
-   "short": false
-  },
-  {
-   "id": "vm7NdoFavgo",
-   "title": "Stop Playing the Tutorial of Your Life and Start the Real Game.",
-   "channel": "Lucas Hof",
-   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
    "published": "2026-10-26T04:09:20+00:00",
    "short": false
   },
@@ -1891,11 +1699,11 @@
    "short": false
   },
   {
-   "id": "WB9p9WWAxvs",
-   "title": "Why Pursuing Absolute Discomfort Is the Only Path to Finding Meaning in Your Life",
+   "id": "fUrDUY1MHdw",
+   "title": "Chaque version de toi était nécessaire.",
    "channel": "Lucas Hof",
    "channelId": "UCJoLShltMmdcYh7O4jikOgg",
-   "published": "2026-10-26T04:09:19+00:00",
+   "published": "2026-10-24T15:45:11+00:00",
    "short": false
   },
   {
@@ -1931,11 +1739,27 @@
    "short": false
   },
   {
+   "id": "QWyEnFeMji0",
+   "title": "Je vis comme un moine à 28 ans. Voilà mes 7 règles de vie",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-15T15:01:20+00:00",
+   "short": false
+  },
+  {
    "id": "Nq4ZnnsCn30",
    "title": "Un humain sur trois a un parasite dans le cerveau",
    "channel": "Sol",
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2026-10-11T17:00:15+00:00",
+   "short": false
+  },
+  {
+   "id": "X1fLXvviK7A",
+   "title": "Les conseils des réseaux sont faits pour la moyenne. Tu n’es pas la moyenne.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-10T16:33:19+00:00",
    "short": false
   },
   {
@@ -1955,6 +1779,14 @@
    "short": false
   },
   {
+   "id": "gAOmC2zf5JI",
+   "title": "Quand tu comprends que chaque choix compte, tu arrêtes de subir ta vie.",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-10-04T16:39:41+00:00",
+   "short": false
+  },
+  {
    "id": "qzE2JOoTNbg",
    "title": "How to Remember Almost Everything You Read (No Notes, No Re-reading, and No Techniques)",
    "channel": "Céline De Luca | Memory Athlete",
@@ -1971,6 +1803,22 @@
    "short": false
   },
   {
+   "id": "ipBhxRYEY4A",
+   "title": "Ton obsession pour la productivité t'empêche d'accomplir ton meilleur travail",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-09-30T15:30:34+00:00",
+   "short": false
+  },
+  {
+   "id": "89JfHJt1Mho",
+   "title": "Comment trouver du temps pour tout (vraiment tout)",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-09-26T15:45:14+00:00",
+   "short": false
+  },
+  {
    "id": "4hXDqg1aP_U",
    "title": "If I Were a Student, This Is the Process I’d Use (Spaced Repetition, Focus, etc.)",
    "channel": "Céline De Luca | Memory Athlete",
@@ -1979,11 +1827,35 @@
    "short": false
   },
   {
+   "id": "Sp3viBfzlxQ",
+   "title": "Je te supplie de commencer à écrire (même si tu détestes ça)",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-09-22T16:05:29+00:00",
+   "short": false
+  },
+  {
    "id": "mjDcMX0Y_08",
    "title": "The FULL Guide to Improving Abstract Thinking (Complete Subcategory Breakdown)",
    "channel": "Power IQ",
    "channelId": "UCQEa1EpSaGhjU-seeDM2Smw",
    "published": "2026-09-18T14:10:31+00:00",
+   "short": false
+  },
+  {
+   "id": "GTd1gnESwjg",
+   "title": "Les 5 niveaux de stimulation (et lequel te contrôle).",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-09-17T15:47:04+00:00",
+   "short": false
+  },
+  {
+   "id": "fb55X0JbUuU",
+   "title": "90 jours pour changer la trajectoire de ta vie avant 2027",
+   "channel": "Lucas Hof",
+   "channelId": "UCJoLShltMmdcYh7O4jikOgg",
+   "published": "2026-09-13T16:00:19+00:00",
    "short": false
   },
   {
@@ -2209,7 +2081,15 @@
    "channelId": "UCMBiznNtMEg7MRiMex_51GQ",
    "published": "2025-01-29T18:04:37+00:00",
    "short": false
+  },
+  {
+   "id": "5UQREFvX7xM",
+   "title": "The ONLY way to travel the UNIVERSE (and we gave it up 50 years ago)",
+   "channel": "Christophe Pauly",
+   "channelId": "UCcvVoqf_M5i1YpILNu58tBw",
+   "published": "1976-12-09T18:29:57+00:00",
+   "short": false
   }
  ],
- "updated": "2026-11-27T08:42:01+00:00"
+ "updated": "2026-11-27T18:29:57+00:00"
 }
